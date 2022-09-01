@@ -102,7 +102,7 @@ def news_pars():
 
         for k, v in sorted(all_news.items()):
             news = f"{v['title']}\n" \
-                   f"{v['link']}"git
+                   f"{v['link']}"
 
             send_telegram(news)
 

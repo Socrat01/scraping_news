@@ -1,10 +1,10 @@
 import requests
-from config import BOT_TOKEN
+from config import BOT_TOKEN, CHANNEL_ID
 
 def send_telegram(message):
 
         url = "https://api.telegram.org/bot"
-        channel_id = "@tesmanian_news"
+        channel_id = CHANNEL_ID
         url += BOT_TOKEN
         method = url + "/sendMessage"
 
